@@ -12,7 +12,7 @@ services:
       - ./src/odoo/addons:/mnt/addons
 #      - ./src/enterprise:/mnt/enterprise
       - ./src/themes:/mnt/themes
-      - ./src/gonetAddons:/mnt/gonetPersonalized
+      - ./src/gonetAddons:/mnt/addonsPersonalized
   db:
     image: postgres:13
     environment:
