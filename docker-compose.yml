@@ -12,12 +12,12 @@ services:
       - ./src/odoo/addons:/mnt/addons
 #      - ./src/enterprise:/mnt/enterprise
       - ./src/themes:/mnt/themes
-      - ./src/gonetAddons:/mnt/gonetAddons
+      - ./src/gonetAddons:/mnt/gonetPersonalized
   db:
     image: postgres:13
     environment:
       - POSTGRES_DB=postgres
-      - POSTGRES_PASSWORD=myodoo
+      - POSTGRES_PASSWORD=odoo
       - POSTGRES_USER=odoo
       - PGDATA=/var/lib/postgresql/data/pgdata
     volumes:
